@@ -20,7 +20,7 @@ jobs:
 
     - name: Install TurboRepo dependencies
       run: |
-        npm clean-install
+        npm install
         npm install -g turbo  # Install Turbo globally
         turbo install          # Install all dependencies in the TurboRepo monorepo
 
