@@ -27,7 +27,7 @@ jobs:
         npm run build     # Build the Next.js app (replace with your specific build script)
     
     - name: Deploy to Azure
-      uses: azure/webapps-deploy@v2.2.9  # Use Azure App Service Deploy action
+      uses: azure/webapps-deploy@v2  # Use Azure App Service Deploy action
       with:
         app-name: turbo-test  # Replace with your Azure App Service name
         slot-name: 'production'          # Deployment slot (you can use 'production' or a custom slot)
