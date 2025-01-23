@@ -1,0 +1,30 @@
+{
+  "name": "tt3",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+	"build-accounts": "turbo build --filter=accounts-site",
+	"build-admin": "turbo build --filter=admin-site",
+	"build-public": "turbo build --filter=public-site",
+    "dev-accounts": "turbo dev --filter=accounts-site",
+	"dev-admin": "turbo dev --filter=admin-site",
+	"dev-public": "turbo dev --filter=public-site",
+	"start-accounts": "next start apps/accounts-site"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "turbo": "^2.3.3",
+    "typescript": "5.5.4"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "npm@10.7.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
