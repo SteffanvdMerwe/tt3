@@ -30,7 +30,8 @@ jobs:
 
       - name: Zip artifact for deployment
         run: |
-          zip release.zip ./* ./apps/accounts-site/.next -qr
+          cd apps/accounts-site
+          zip release.zip ./* .next -qr
           
           # List files inside the zip file
           echo "Listing files inside the zip file:"
