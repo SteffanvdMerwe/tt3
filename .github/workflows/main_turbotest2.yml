@@ -20,8 +20,8 @@ jobs:
 
       - name: npm install, build, and test
         run: |
+          cd apps/accounts-site
           npm install
-          npm ls
           npm run build
 
           # List files before zipping
