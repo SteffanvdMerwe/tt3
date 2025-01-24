@@ -22,7 +22,7 @@ jobs:
         run: |
           npm install
           npm ls
-          npm run build-accounts
+          npm run build
 
           # List files before zipping
           echo "Listing files before zipping:"
