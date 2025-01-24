@@ -21,6 +21,7 @@ jobs:
       - name: npm install, build, and test
         run: |
           npm install
+          npm ls
           npm run build-accounts
 
           # List files before zipping
