@@ -30,8 +30,7 @@ jobs:
 
       - name: Zip artifact for deployment
         run: |
-          cd apps/accounts-site
-          zip release.zip ./* .next -qr
+          zip release.zip /node-modules ./apps/accounts-site* ./apps/accounts-site/.next -qr
           
           # List files inside the zip file
           echo "Listing files inside the zip file:"
@@ -41,7 +40,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: node-app
-          path: apps/accounts-site/release.zip
+          path: release.zip
 
   deploy:
     runs-on: ubuntu-latest
