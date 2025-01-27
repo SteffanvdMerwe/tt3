@@ -22,15 +22,9 @@ jobs:
       - name: Install dependencies and build with Turbo
         run: |
           npm install -g turbo
-          cd apps/accounts-site
+          #cd apps/accounts-site
           npm install
           turbo run build --filter=accounts-site
-
-      # Prepare the app for deployment (next build for production)
-      - name: Build Next.js app for production
-        run: |
-          cd apps/accounts-site
-          npm run build
 
       # List files before zipping
       - name: List files before zipping
