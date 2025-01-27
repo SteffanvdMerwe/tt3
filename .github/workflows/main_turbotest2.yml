@@ -25,20 +25,18 @@ jobs:
           cd apps/accounts-site
           npm install
           turbo run build --filter=accounts-site
-        displayName: 'Install dependencies and build'
 
       # Prepare the app for deployment (next build for production)
       - name: Build Next.js app for production
         run: |
           cd apps/accounts-site
           npm run build
-        displayName: 'Build Next.js app for production'
 
       # List files before zipping
       - name: List files before zipping
         run: |
           echo "Listing files before zipping:"
-          find . -type f
+          find apps/accounts-site -type f
 
       - name: Zip artifact for deployment
         run: |
@@ -85,4 +83,4 @@ jobs:
         with:
           app-name: 'turbotest2'
           slot-name: 'Production'
-          package: './apps/accounts-site'  # Corrected package path to the app folder
+          package: './apps/accounts-site'  # The correct package path to the app folder
