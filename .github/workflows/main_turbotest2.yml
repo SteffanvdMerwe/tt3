@@ -21,6 +21,7 @@ jobs:
       # Install dependencies using TurboRepo
       - name: Install dependencies and build with Turbo
         run: |
+          cd apps/accounts-site
           npm install
           npm run build
 
@@ -28,10 +29,11 @@ jobs:
       - name: List files before zipping
         run: |
           echo "Listing contents of node_modules/.bin:"
-          ls -l ./node_modules/.bin
+          ls -l ./
 
       - name: Zip artifact for deployment
         run: |
+          cd apps/accounts-site
           zip release.zip ./* .next -qr
           
           # List files inside the zip file
@@ -42,7 +44,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: node-app
-          path: release.zip
+          path: apps/accounts-site/release.zip
 
   deploy:
     runs-on: ubuntu-latest
