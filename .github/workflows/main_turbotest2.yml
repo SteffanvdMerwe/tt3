@@ -34,7 +34,7 @@ jobs:
 
       - name: Zip artifact for deployment
         run: |
-          zip release.zip ./* .next .bin ./node_modules/.bin -qr
+          zip release.zip ./* .next .bin ./node_modules/.bin ./node_modules/.bin/next ./node_modules/.bin/next.cmd ./node_modules/.bin/next.ps1 -qr
           
           # List files inside the zip file
           echo "Listing files inside the zip file:"
