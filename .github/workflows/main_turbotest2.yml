@@ -21,11 +21,8 @@ jobs:
       # Install dependencies using TurboRepo
       - name: Install dependencies and build with Turbo
         run: |
-          npm install -g turbo
-          npm install -g next
-          #cd apps/accounts-site
           npm install
-          turbo run build --filter=accounts-site
+          npm run build --filter=accounts-site
 
       # List files before zipping
       - name: List files before zipping
