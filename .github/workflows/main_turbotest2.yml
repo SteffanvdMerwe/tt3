@@ -32,7 +32,7 @@ jobs:
 
       - name: Zip artifact for deployment
         run: |
-          zip release.zip ./* ./apps/accounts-site/.next .next ./node_modules/next .bin ./node_modules/.bin ./node_modules/.bin/next ./node_modules/.bin/next.cmd ./node_modules/.bin/next.ps1 -qr
+          zip release.zip ./* ./apps/accounts-site/.next .next ./node_modules ./node_modules/next .bin ./node_modules/.bin ./node_modules/.bin/next ./node_modules/.bin/next.cmd ./node_modules/.bin/next.ps1 -qr
           
           # List files inside the zip file
           echo "Listing files inside the zip file:"
