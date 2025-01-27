@@ -22,6 +22,7 @@ jobs:
       - name: Install dependencies and build with Turbo
         run: |
           npm install -g turbo
+          npm install -g next
           #cd apps/accounts-site
           npm install
           turbo run build --filter=accounts-site
