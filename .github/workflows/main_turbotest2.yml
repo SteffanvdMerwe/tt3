@@ -21,9 +21,8 @@ jobs:
       # Install dependencies using TurboRepo
       - name: Install dependencies and build with Turbo
         run: |
-          npm install
-          npm run build
           cd apps/accounts-site
+          npm install
           npm run build
 
       # List files before zipping
@@ -34,7 +33,7 @@ jobs:
 
       - name: Zip artifact for deployment
         run: |
-          zip release.zip ./* ./apps/accounts-site/.next .next ./node_modules ./node_modules/next .bin ./node_modules/.bin ./node_modules/.bin/next ./node_modules/.bin/next.cmd ./node_modules/.bin/next.ps1 -qr
+          zip release.zip ./apps/accounts-site/* ./apps/accounts-site/.next -qr
           
           # List files inside the zip file
           echo "Listing files inside the zip file:"
