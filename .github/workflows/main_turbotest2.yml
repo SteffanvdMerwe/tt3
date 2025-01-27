@@ -77,4 +77,4 @@ jobs:
         with:
           app-name: 'turbotest2'
           slot-name: 'Production'
-          package: './apps/accounts-site'  # The correct package path to the app folder
+          package: './'  # The correct package path to the app folder
