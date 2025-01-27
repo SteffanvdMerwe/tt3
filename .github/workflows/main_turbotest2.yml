@@ -23,6 +23,8 @@ jobs:
         run: |
           npm install
           npm run build
+          cd apps/accounts-site
+          npm run build
 
       # List files before zipping
       - name: List files before zipping
