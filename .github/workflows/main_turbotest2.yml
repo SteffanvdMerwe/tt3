@@ -30,7 +30,7 @@ jobs:
       - name: List files before zipping
         run: |
           echo "Listing files before zipping:"
-          find apps/accounts-site -type f
+          find node_modules/.bin -type f
 
       - name: Zip artifact for deployment
         run: |
