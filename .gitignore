@@ -39,3 +39,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 server.js
+/apps/web/node_modules
+/apps/docs/node_modules
+/apps/accounts-site/.next
+/apps/accounts-site/.turbo
+/.vs
+/.turbo

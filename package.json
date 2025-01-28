@@ -12,7 +12,7 @@
     "dev-accounts": "turbo dev --filter=accounts-site",
 	"dev-admin": "turbo dev --filter=admin-site",
 	"dev-public": "turbo dev --filter=public-site",
-	"start-accounts": "turbo start --filter=accounts-site"
+	"start-accounts": "next start apps/accounts-site"
   },
   "devDependencies": {
     "prettier": "^3.2.5",
