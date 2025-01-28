@@ -22,7 +22,7 @@ jobs:
       - name: Install dependencies and build in temp folder
         run: |
           npm install
-          npm run build
+          npm run build-accounts
 
       # Zip artifact for deployment
       - name: Zip artifact for deployment
