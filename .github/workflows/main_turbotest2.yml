@@ -30,9 +30,9 @@ jobs:
           cd apps/accounts-site
           # Check if node_modules is installed in the root or app directory
           if [ -d "../../node_modules" ]; then
-            cp -r ../../node_modules .  # Copy root node_modules to app if they are hoisted
+          cp -r ../../node_modules .  # Copy root node_modules to app if they are hoisted
           fi
-          zip -r ../../release.zip .next public package.json node_modules -q  # Include node_modules
+          zip -r release.zip .next public package.json node_modules -q  # Include node_modules
 
           # List files inside the zip file
           echo "Listing files inside the zip file:"
