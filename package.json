@@ -6,13 +6,14 @@
     "dev": "turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-	"build-accounts": "turbo build --filter=accounts-site",
-	"build-admin": "turbo build --filter=admin-site",
-	"build-public": "turbo build --filter=public-site",
+    "build-accounts": "turbo build --filter=accounts-site",
+    "build-admin": "turbo build --filter=admin-site",
+    "build-public": "turbo build --filter=public-site",
     "dev-accounts": "turbo dev --filter=accounts-site",
-	"dev-admin": "turbo dev --filter=admin-site",
-	"dev-public": "turbo dev --filter=public-site",
-	"start-accounts": "next start apps/accounts-site"
+    "dev-admin": "turbo dev --filter=admin-site",
+    "dev-public": "turbo dev --filter=public-site",
+    "start-accounts": "next start apps/accounts-site",
+    "start-web": "next start apps/web"
   },
   "devDependencies": {
     "prettier": "^3.2.5",

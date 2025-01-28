@@ -45,3 +45,13 @@ server.js
 /apps/accounts-site/.turbo
 /.vs
 /.turbo
+/apps/admin-site/.next
+/apps/admin-site/.turbo
+/apps/docs/.next
+/apps/docs/.turbo
+/apps/public-site/.next
+/apps/web/.next
+/apps/docs/next-env.d.ts
+/apps/web/next-env.d.ts
+/apps/public-site/.turbo
+/apps/web/.turbo
